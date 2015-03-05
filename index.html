@@ -9,6 +9,10 @@
     <script type="text/javascript" src="./src/init.js"></script>
 </head>
 <body>
-	<button id="shownow" onclick="getChartType('line')">Generate Graph</button>
-
+	<select id="chartType">
+		<option value="basic_line">Basic Line</option>
+	</select>
+	<button id="shownow" onclick="getChartType(document.getElementById('chartType')[0].value)">Generate Graph</button>
+	<div id="chartbody">
+	</div>
 </body>
